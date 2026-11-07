@@ -1,0 +1,3 @@
+ "use client";
+import * as XLSX from "xlsx";
+export default function ResultsExport({rows}:{rows:any[]}){function download(){const sheet=XLSX.utils.json_to_sheet(rows);const book=XLSX.utils.book_new();XLSX.utils.book_append_sheet(book,sheet,"AAJ Mock Results");XLSX.writeFile(book,"AAJ_Mock_Examination_Results_2026.xlsx");}return <p><button onClick={download}>Download Bulk Results (Excel)</button></p>}

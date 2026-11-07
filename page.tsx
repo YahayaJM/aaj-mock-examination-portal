@@ -1,0 +1,2 @@
+import Link from "next/link";
+export default function Home(){return <main className="wrap"><section className="card"><h2>SS3 MOCK EXAMINATION</h2><p className="muted">2026/2027 Academic Session</p><p>Students should sign in using the examination number and PIN issued by the school.</p><Link className="btn" href="/student/login">Student Login</Link>　<Link className="btn secondary" href="/admin/login">Administrator</Link></section></main>}
